@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simon</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <button class="show-modal" id="readMe">About Game</button>
+    <h1 id="level-title">Press any Key to Start</h1>
+    <div class="container">
+      <div class="row">
+        <div type="button" id="green" class="btn green"></div>
+
+        <div type="button" id="red" class="btn red"></div>
+      </div>
+
+      <div class="row">
+        <div type="button" id="yellow" class="btn yellow"></div>
+        <div type="button" id="blue" class="btn blue"></div>
+      </div>
+    </div>
+    <div class="modal hidden">
+      <button class="close-modal">x</button>
+      <h1>Game Instructions</h1>
+      <p>
+        1. At the beginning of the game, one of the 4 buttons lights up randomly
+        producing simultaneously a sound associated to the button. <br />2.
+        Player has to press the same button. <br />3. Next, another button
+        lights up randomly. <br />4. Player has to reproduce this chain of
+        button light from beginning using his memory. <br />5. Score level is
+        increased each time when player reproduces the chain of light
+        successfully
+      </p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>
