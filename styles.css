@@ -100,3 +100,16 @@ body {
   backdrop-filter: blur(3px);
   z-index: 5;
 }
+@media (max-width: 500px) {
+  #level-title {
+    font-size: 1.2rem;
+    margin: 5%;
+    line-height: 1.5;
+  }
+  .btn {
+    margin: 25px 7px;
+    height: 70px;
+    width: 70px;
+  }
+}
+
