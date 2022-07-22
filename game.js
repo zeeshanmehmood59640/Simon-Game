@@ -71,7 +71,12 @@ $(document).keydown(function () {
     nextSequence();
   }
 });
-
+$(document).click(function () {
+  if (!gameStarted) {
+    gameStarted = true;
+    nextSequence();
+  }
+});
 const openModal = function () {
   modal.removeClass("hidden");
   overlay.removeClass("hidden");
